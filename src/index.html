@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="./assets/icon/icon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/icon/icon.svg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="./assets/icon/icon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/bootstrap.css" />
+  <link rel="manifest" href="./manifest.json">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="./index.css">
+  <title>3d Software</title>
+</head>
+
+<body>
+  <div id="divLoading">
+    <div style="margin: 15%;">
+      <img src="./assets/icon/icon.svg" style="width: 100px;" class="animation">
+      <br>
+      <br>
+      <h1>3d Software</h1>
+      <div id="divAdvice"></div>
+    </div>
+  </div>
+  <div style="z-index: 0;">
+    <div style="padding: 1%;">
+      <img src="./assets/icon/icon.svg" id="logo">
+      <div id="divTitle">
+        3d Software v1.0.0
+      </div>
+    </div>
+    <br>
+    <br>
+    <div id="divmodules"></div>
+    <div id="divOptions">
+      <div id="divCreateModule" class="button">Create</div>
+      <div id="divDeleteModule" class="button">Delete</div>
+      <div id="divExportProject" class="button">Export</div>
+      <div id="divImportProject" class="button">Import</div>
+    </div>
+    <div id="divEditor"></div>
+    <div id="divIframe">
+      <Iframe src="./runtime/index.html" id="iframe" style="width: 100%; height: 100%;"></Iframe>
+    </div>
+    <div id="divConsole"></div>
+    <div id="divPlay" class="btn btn-primary btn-sm">
+      Play
+    </div>
+  </div>
+</body>
+<script src="./editor/ace.js"></script>
+<script src="./editor/ext-language_tools.js"></script>
+<script src="./module.js"></script>
+<script src="./console.js"></script>
+<script src="./loading.js"></script>
+<script src="./utils.js"></script>
+<script src="./index.js"></script>
+
+</html>

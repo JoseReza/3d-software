@@ -1,0 +1,261 @@
+/* The animation code */
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    33% {
+        transform: rotate(180deg);
+    }
+
+    66% {
+        transform: rotate(360deg);
+    }
+
+}
+
+/* The element to apply the animation to */
+.animation {
+    animation-name: rotation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    background-color: #222;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#divTitle {
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    padding: 0.25rem;
+    float: left;
+    margin: 1%;
+}
+
+#logo {
+    width: 50px;
+    float: left;
+}
+
+.button {
+    margin: 0.25rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 0.2rem;
+    font-size: small;
+}
+
+/* pc */
+@media only screen and (min-width: 768px) {
+
+    #divmodules {
+        position: relative;
+        width: 58%;
+        height: 2.5rem;
+        border: 1px;
+        float: left;
+        background-color: #444;
+        margin-left: 1%;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        color: black;
+        overflow-x: auto;
+        display: flex;
+        padding: 0.25rem;
+    }
+
+    #divOptions {
+        position: relative;
+        width: 37%;
+        margin-left: 1%;
+        border: 1px;
+        float: left;
+        background-color: #444;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        color: white;
+        overflow: hidden;
+        display: inline-flex;
+        padding: 0.25rem;
+    }
+
+    #divEditor {
+        position: relative;
+        width: 58%;
+        height: 28rem;
+        border: 1px;
+        float: left;
+        margin-left: 1%;
+    }
+
+    #divIframe {
+        width: 37%;
+        height: 20rem;
+        float: left;
+        margin-left: 1%;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        text-align: center;
+        background-color: #222;
+        color: white;
+        border-radius: 5px;
+    }
+
+    #divConsole {
+        overflow-y: scroll;
+        position: relative;
+        width: 37%;
+        height: 4rem;
+        border: 1px;
+        float: left;
+        background-color: #222;
+        color: white;
+        border-radius: 5px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin-left: 1%;
+    }
+
+    #divPlay {
+        width: 37%;
+        height: 2rem;
+        float: left;
+        margin-top: 1rem;
+        margin-left: 1%;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    #divPlay:hover {
+        width: 37%;
+        height: 2rem;
+        float: left;
+        margin-top: 1rem;
+        margin-left: 1%;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: #222;
+        color: white;
+        text-align: center;
+        background-color: white;
+        color: black;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 767px) {
+
+    #divmodules {
+        position: relative;
+        width: 98%;
+        height: 3rem;
+        border: 1px;
+        float: left;
+        background-color: #444;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        color: black;
+        overflow-x: auto;
+        display: flex;
+        padding: 0.25rem;
+    }
+
+    #divOptions {
+        position: relative;
+        width: 98%;
+        margin-left: 1%;
+        border: 1px;
+        float: left;
+        background-color: #444;
+        margin-bottom: 1rem;
+        border-radius: 5px;
+        color: white;
+        overflow: hidden;
+        display: inline-flex;
+        padding: 0.25rem;
+    }
+
+    #divEditor {
+        position: relative;
+        width: 98%;
+        height: 30rem;
+        border: 1px;
+        float: left;
+    }
+
+    #divIframe {
+        margin-top: 1rem;
+        width: 98%;
+        height: 10rem;
+        float: left;
+        margin-left: 1%;
+        margin-bottom: 1rem;
+        cursor: pointer;
+        text-align: center;
+        background-color: #222;
+        color: white;
+    }
+
+    #divConsole {
+        margin-top: 1rem;
+        overflow-y: scroll;
+        position: relative;
+        width: 98%;
+        height: 6rem;
+        border: 1px;
+        float: left;
+        background-color: #222;
+        color: white;
+        border-radius: 5px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        margin-left: 1%;
+    }
+
+    #divPlay {
+        width: 92%;
+        height: 2rem;
+        float: left;
+        margin-top: 1rem;
+        margin-left: 1%;
+        border-radius: 5px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+
+    #divPlay:hover {
+        width: 92%;
+        height: 2rem;
+        float: left;
+        margin-top: 1rem;
+        margin-left: 1%;
+        border-radius: 5px;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+
+
+#divLoading {
+    text-align: center;
+    width: 100%;
+    z-index: 100;
+    position: absolute;
+    height: 100%;
+    background-color: #222;
+    color: white;
+}
