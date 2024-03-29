@@ -1,6 +1,6 @@
 import * as render from "./render/index.js";
 
-async function setup(scene) {
+async function start(scene) {
 
     scene.renderer.setPixelRatio(2);
     scene.renderer.setSize(window.innerWidth, window.innerHeight);
@@ -11,7 +11,7 @@ async function setup(scene) {
     objectB.scene.position.set(0, 10, 0);
 
     //Add physics to object B
-    scene.physics.add.existing(objectB.scene, {shape: "convex"});
+    scene.physics.add.existing(objectB.scene, { shape: "convex" });
     //Add object B to the scene
     scene.scene.add(objectB.scene);
 
@@ -26,6 +26,7 @@ async function setup(scene) {
 
     //Camera position // X Y Z 
     scene.camera.position.set(-5, 16, -10);
+    
 }
 
-let scene = await render.start(setup);
+render.start(start);

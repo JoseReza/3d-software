@@ -1,6 +1,6 @@
 let { Scene3D, PhysicsLoader, Project } = globalThis.packages.enable3d;
 
-export async function start(setup) {
+export async function start(setup, frame = async function (escene) { }) {
 
   return new Promise((resolve, reject) => {
     class Main extends Scene3D {
@@ -11,6 +11,14 @@ export async function start(setup) {
         } catch (error) {
           console.error(error);
           reject(error);
+        }
+      }
+
+      async update() {
+        try {
+          await frame(this);
+        } catch (error) {
+          console.error(error);
         }
       }
     }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "webpack --config src/runtime/webpack.config.js",
+    "build": "webpack --config src/webpack.config.js && webpack --config src/runtime/webpack.config.js",
     "start": "npm run build && node server.js"
   },
   "keywords": [],
