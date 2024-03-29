@@ -1,0 +1,24 @@
+{
+  "name": "3d-software",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "webpack --config src/runtime/webpack.config.js",
+    "start": "npm run build && node server.js"
+  },
+  "keywords": [],
+  "author": "José Rosendo Soto Reza",
+  "license": "ISC",
+  "dependencies": {
+    "enable3d": "^0.21.0",
+    "express": "^4.19.2",
+    "node-polyfill-webpack-plugin": "^3.0.0",
+    "three": "^0.162.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.5.1"
+  }
+}
